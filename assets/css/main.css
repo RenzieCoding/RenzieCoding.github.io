@@ -2570,3 +2570,50 @@ p {
 		transform: scale(1.1); /* Enlarge image on hover */
 		z-index: 10; /* Bring image to the front */
 	}
+	/* Ensures compatibility and consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Standard font and layout settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Center content and ensure responsive behavior */
+.row {
+    display: flex;
+    justify-content: center; /* Centers content */
+    align-items: center; /* Aligns vertically */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin: 20px 0;
+}
+
+/* Style for description text */
+.description {
+    max-width: 600px; /* Prevents excessive width */
+    margin: 0 auto; /* Centers the text */
+    text-align: center; /* Ensures proper alignment */
+    word-wrap: break-word; /* Prevents text from overflowing */
+    padding: 10px; /* Adds some spacing */
+}
+
+/* Image responsiveness */
+.image.fit img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive columns */
+.col-8, .col-12-medium {
+    flex: 1 1 80%;
+    max-width: 80%;
+}
